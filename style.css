@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,23 +8,23 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background-color: #121214;
     color: #FFFFFF;
     height: 100vh;
     width: 100vw;
 }
 
-img{
+img {
     margin-top: 150px;
 }
 
 
-section{
+section {
     margin-top: 50px;
 }
 
-section input{
+section input {
     border-radius: 10px;
     height: 30px;
     width: 150px;
@@ -34,18 +35,24 @@ section input{
     border: none;
 }
 
-section input::placeholder{
+section input::placeholder {
     color: #FFFFFF;
     text-align: center;
     font-weight: bold;
 }
 
-section button{
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section button {
     display: block;
     margin: 20px auto;
     width: 200px;
     height: 60px;
-    border-radius: 10px;   
+    border-radius: 10px;
     border: none;
     background-color: rgb(165, 1, 1);
     color: white;
@@ -55,18 +62,18 @@ section button{
     font-size: 20px;
 }
 
-section button:hover{
+section button:hover {
     background-color: rgb(255, 0, 0);
     transform: scale(1.1);
 }
 
-section button:active{
+section button:active {
     background-color: rgb(165, 1, 1);
 }
 
 
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
     body {
         width: 80%;
         height: auto;
@@ -75,7 +82,7 @@ section button:active{
         margin-left: auto;
     }
 
-    img{
+    img {
         display: block;
         width: 350px;
         margin-top: 200px;
@@ -83,20 +90,26 @@ section button:active{
         margin-right: auto;
     }
 
-    section{
+    section {
         display: flex;
         flex-direction: column;
         width: 200px;
         margin: 50px auto;
     }
 
-    section input{
+    section input {
         width: 200px;
         height: 50px;
         margin: 10px auto;
     }
 
-    section button{
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    section button {
         width: 200px;
         height: 50px;
         font-size: 16px;
@@ -104,5 +117,7 @@ section button:active{
 
     }
 
-    .no-scroll { overflow: hidden !important; }
+    .no-scroll {
+        overflow: hidden !important;
+    }
 }
