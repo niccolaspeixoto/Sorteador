@@ -7,7 +7,7 @@ function sortNumber() {
 
 if (min >= max) {
     alert("O valor mínimo não pode ser maior, ou igual que o valor máximo!")
-  } else {
+  }  else {
     const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
     alert(result);
