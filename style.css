@@ -75,7 +75,7 @@ section button:active {
 
 @media screen and (max-width: 600px) {
     body {
-        width: 80%;
+        width: 80vw;
         height: auto;
         text-align: center;
         margin-right: auto;
@@ -93,7 +93,7 @@ section button:active {
     section {
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 80vw;
         margin: 50px auto;
     }
 
